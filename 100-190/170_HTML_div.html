@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML div</title>
+    <style>
+        div{
+            border: 2px dotted;
+            height: 100px;
+            width: 300px;
+            margin: 20px; /*Außenrand*/
+            background-color: plum;
+            padding: 30px;
+        }
+        div.rand{
+            border-style: solid;
+            border-width: 10px 20px 30px 40px;
+            margin-left: 3px;
+            /*Rein technisch ist es möglich,
+            beim margin negative Werte zu benutzen*/
+            margin-top: -30px;
+            /*Bei Padding sind keine negativen Werte erlaubt.*/
+            padding-top: -50px;
+        }
+    </style>
+</head>
+<body>
+<h1>Das HTML-Element div</h1>
+
+<div>
+    <p>
+        div steht für Division (Abteilung)
+        und meint einen Bereich.
+        Ein div ist standardmäßig so breit wie das Browser-fenster
+        und so hoch wie sein Inhalt.
+    </p>
+</div>
+
+<div>
+    ich bin im zweiten div.
+</div>
+
+<div class="rand">
+    ich bin im dritten div.
+</div>
+
+</body>
+</html>

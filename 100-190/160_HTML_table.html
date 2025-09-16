@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-Tabellen</title>
+    <style>
+        table{
+            border-width: 1px;
+            border-style: solid;
+            border-color: purple;
+            border: 1px dotted teal;
+
+            /*Die doppelten Linien entfernen*/
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid purple;
+
+            /*Innenrand*/
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<!--
+    tr - table row
+    th - table head (Spaltenüberschrift)
+    td - table data (Normale Tabellenzelle
+--->
+<table>
+    <tr>
+        <th></th>
+        <th>True</th>
+        <th>False</th>
+    </tr>
+    <tr>
+        <th>True</th>
+        <td>True</td>
+        <td>False</td>
+    </tr>
+    <tr>
+        <th>False</th>
+        <td>False</td>
+        <td>False</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
