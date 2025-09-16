@@ -1,7 +1,7 @@
 <?php
 
-$X = 'Dilan';
-$Y = 'Boyaci';
-$Z = 'Stuttgart';
+$name = 'D';
+$nachname = 'B';
+$wohnort = 'S';
 
-print"$X $Y wohnt in $Z";
+print"$name $nachname wohnt in $wohnort";
