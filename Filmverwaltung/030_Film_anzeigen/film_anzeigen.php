@@ -1,17 +1,13 @@
 <?php
 
-// Datenbankverbindung herstellen (wie in "Test-Datensätze.php")
-$options = [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-];
-$db = new PDO('mysql:host=localhost;dbname=filmverwaltung', 'root', "", $options);
+global $db;
+require_once 'lib/db_verbindung.php';
 
 // var_dump($_GET);
 // echo $_GET['id'];
 
-//SELECT * FROM filme WHERE id=3;
-//$stmt = $db->query('SELECT * FROM filme WHERE id=3;');
+// SELECT * FROM filme WHERE id=3;
+// $stmt = $db->query('SELECT * FROM filme WHERE id=3;');
 $stmt = $db->query("SELECT * FROM filme WHERE id={$_GET['id']};");
 $film = $stmt->fetch();
 $film['cover'] = '<img src="cover/' . $film['cover'] . '">';
