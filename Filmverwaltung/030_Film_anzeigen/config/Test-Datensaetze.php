@@ -39,3 +39,6 @@ var_dump($stmt);
 $filme = $stmt->fetchAll();
 
 var_dump($filme);
+
+
+

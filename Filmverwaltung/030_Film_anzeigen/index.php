@@ -10,7 +10,7 @@ $stmt = $db->query('SELECT * FROM filme;');
 $filme = $stmt->fetchAll();
 // var_dump($filme);
 
-var_dump($filme[0]);  // array(9)
+// var_dump($filme[0]);  // array(9)
 
 // echo $filme[0]['titel'];  // Equalizer
 
@@ -50,23 +50,23 @@ foreach ($filme as $key => $film) {
 
     <tr>
         <?php foreach ($headings as $heading) { ?>
-            <th>
-                <?php echo $heading; ?>
-            </th>
+        <th>
+            <?php echo $heading; ?>
+        </th>
         <?php } ?>
     </tr>
 
     <?php foreach ($filme as $film) { ?>
 
-        <tr onclick="location.href='film_anzeigen.php?id=<?php echo $film['id']; ?>'">
-            <?php foreach ($film as $f) { ?>
+    <tr onclick="location.href='film_anzeigen.php?id=<?php echo $film['id']; ?>'">
+        <?php foreach ($film as $f) { ?>
 
                 <td>
                     <?php echo $f; ?>
                 </td>
 
-            <?php } ?>
-        </tr>
+        <?php } ?>
+    </tr>
 
     <?php } ?>
 

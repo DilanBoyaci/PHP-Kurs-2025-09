@@ -30,9 +30,9 @@ foreach ($headings as $k => $v) {
 $headings = array_map('ucfirst', $headings);
 
 foreach ($filme as $key => $film) {
-unset($film['id']);     // Inhalte entfernen
-unset($film['cover']);  // Inhalte entfernen
-$filme[$key] = $film;
+    unset($film['id']);     // Inhalte entfernen
+    unset($film['cover']);  // Inhalte entfernen
+    $filme[$key] = $film;
 }
 
 ?>
@@ -63,9 +63,9 @@ $filme[$key] = $film;
     <tr>
         <?php foreach ($film as $f) { ?>
 
-            <td>
-                <?php echo $f; ?>
-            </td>
+                <td>
+                    <?php echo $f; ?>
+                </td>
 
         <?php } ?>
     </tr>

@@ -7,8 +7,8 @@ $options = [
 ];
 $db = new PDO('mysql:host=localhost;dbname=filmverwaltung', 'root', "", $options);
 
-//var_dump($_GET);
-//echo $_GET['id'];
+// var_dump($_GET);
+// echo $_GET['id'];
 
 //SELECT * FROM filme WHERE id=3;
 //$stmt = $db->query('SELECT * FROM filme WHERE id=3;');
@@ -35,7 +35,7 @@ var_dump($film);
 <h1>Film anzeigen</h1>
 
 <table>
-    <?php foreach ($film as $k => $v) { ?>
+        <?php foreach ($film as $k => $v) { ?>
         <tr>
             <th>
                 <?php echo $k; ?>
@@ -44,7 +44,7 @@ var_dump($film);
                 <?php echo $v; ?>
             </td>
         </tr>
-    <?php } ?>
+        <?php } ?>
 </table>
 
 </body>
